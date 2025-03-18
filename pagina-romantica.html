@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para Ti, Mi Amor ❤️</title>
+    <style>
+        /* Animación de corazones en el fondo */
+        @keyframes moverCorazones {
+            from { background-position: 0 0; }
+            to { background-position: 0 200px; }
+        }
+
+        /* Estilos generales */
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            overflow: auto; /* Habilita el scroll */
+        }
+
+        body {
+            font-family: 'Dancing Script', cursive;
+            color: #7d08f2;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            background: url('https://files.oaiusercontent.com/file-8D1iV27YjNEu8eJeoTZiLe?se=2025-03-18T17%3A16%3A20Z&sp=r&sv=2024-08-04&sr=b&rscc=max-age%3D604800%2C%20immutable%2C%20private&rscd=attachment%3B%20filename%3D05c8a5e5-0267-4455-9db6-21a1af4c9422.webp&sig=xvWEakP%2BceETcYSt6rwZo6fcgk/IIy2E3bRH3sju8EU%3D');
+            background-size: 200px 200px;
+            background-repeat: repeat;
+            background-position: center;
+            animation: moverCorazones 10s linear infinite;
+            min-height: 100vh;
+        }
+
+        .contenedor {
+            background: rgba(255, 255, 255, 0.8);
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            max-width: 800px;
+            width: 90%;
+            backdrop-filter: blur(10px);
+            animation: aparecer 1.5s ease-in-out;
+            margin: 20px auto; /* Añade margen para separar del borde */
+        }
+
+        @keyframes aparecer {
+            from {
+                opacity: 0;
+                transform: translateY(-50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            color: #ff0404;
+            animation: latido 2s infinite;
+        }
+
+        @keyframes latido {
+            0%, 100% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.1);
+            }
+        }
+
+        p {
+            font-size: 1.5rem;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .razones {
+            text-align: left;
+            margin-bottom: 20px;
+        }
+
+        .razones ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .razones li {
+            background: rgba(255, 255, 255, 0.3);
+            margin: 10px 0;
+            padding: 10px;
+            border-radius: 5px;
+            font-size: 1.2rem;
+            animation: slideIn 0.5s ease-out;
+            backdrop-filter: blur(3px);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .razones li:hover {
+            transform: translateX(10px);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateX(-100%);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        .contador {
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        button {
+            background-color: #e74c3c;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #c0392b;
+            transform: scale(1.1);
+        }
+
+        #imagen-sorpresa {
+            display: none;
+            max-width: 100%;
+            border-radius: 10px;
+            margin-top: 20px;
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="contenedor">
+        <h1>Para Ti, Mi Amor ❤️</h1>
+        <p>
+            Mi amorcito lindo, esta página es solo para ti, un pedacito de mi corazón convertido en palabras. Eres mi sueño más bonito, mi razón de ser y la melodía más dulce que la vida me ha regalado. Cada instante contigo es como vivir en un cuento de hadas, donde tu amor es la magia que da color a mis días. Eres mi sol, mi luna y todas mis estrellas, el suspiro que me roba el aliento y el latido más hermoso de mi corazón. Te amo con locura, con ternura, con toda el alma… ¡y un poquito más! 💖✨💕
+        </p>
+
+        <!-- Razones por las que la amas -->
+        <div class="razones">
+            <h2>Razones por las que te amo:</h2>
+            <ul>
+              <li>1. Porque eres mi hogar: No importa dónde estemos, contigo siempre me siento en casa.</li>
+              <li>2. Por tu mirada: Tus ojos son el reflejo de un alma pura y llena de amor.</li>
+              <li>3. Por tu forma de amarme: Me haces sentir que soy la persona más importante del mundo.</li>
+              <li>4. Por tu risa: Es el sonido más hermoso que he escuchado y siempre ilumina mi día.</li>
+              <li>5. Por tu fuerza: Aprendo de ti cada día a ser más valiente y resiliente.</li>
+              <li>6. Por tu ternura: Tienes una forma única de hacerme sentir amado/a con los pequeños detalles.</li>
+              <li>7. Porque me conoces mejor que nadie: Sabes exactamente cómo alegrarme, incluso en mis peores días.</li>
+              <li>8. Por tu pasión: La forma en que te entregas a lo que amas me inspira a ser mejor.</li>
+              <li>9. Porque me haces creer en el amor verdadero: Contigo descubrí que el amor no es un cuento de hadas, es real.</li>
+              <li>10. Por tu compañía: No hay nada que disfrute más que pasar tiempo a tu lado.</li>
+            </ul>
+        </div>
+
+        <!-- Contador de tiempo juntos -->
+        <div class="contador">
+            <p>Llevamos juntos: <span id="tiempo-juntos">0 días</span></p>
+        </div>
+
+        <!-- Botón de sorpresa -->
+        <button onclick="mostrarSorpresa()">Haz clic para una sorpresa</button>
+
+        <!-- Imagen de sorpresa -->
+        <img id="imagen-sorpresa" src="7d3cd65da2182b47531a82c7391c97c0.jpg" alt="Sorpresa">
+    </div>
+
+    <script>
+        // Contador de tiempo juntos
+        const fechaInicio = new Date("2025-01-28");
+        const tiempoJuntos = document.getElementById("tiempo-juntos");
+
+        function actualizarContador() {
+            const hoy = new Date();
+            const diferencia = hoy - fechaInicio;
+            const dias = Math.floor(diferencia / (1000 * 60 * 60 * 24));
+            tiempoJuntos.textContent = `${dias} días`;
+        }
+
+        actualizarContador();
+        setInterval(actualizarContador, 86400000); 
+
+        // Función para mostrar la imagen de sorpresa
+        function mostrarSorpresa() {
+            const imagenSorpresa = document.getElementById("imagen-sorpresa");
+            imagenSorpresa.style.display = "block"; // Muestra la imagen
+        }
+    </script>
+
+    <!-- Reproductor de audio -->
+    <audio autoplay loop>
+        <source src="miau miau miau miau.mp3" type="audio/mpeg">
+        Tu navegador no soporta la reproducción de audio.
+    </audio>
+</body>
+</html>
